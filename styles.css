@@ -118,11 +118,15 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--light-gray);
   color: var(--dark-blue);
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 85px 32px 78px 32px;
+  margin-bottom: 80px;
 }
 
 .product-description {
@@ -153,4 +157,58 @@ body {
   line-height: 166.667%;
   letter-spacing: 0.0065rem;
   opacity: 0.5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.56rem;
+}
+
+.box-container {
+  max-width: 22rem;
+  max-height: 15.6rem;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px -11px hsla(213, 47%, 67%, 0.502);
+  border-radius: 0.5rem;
+  padding: 9%;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 176.923%;
+  letter-spacing: 0.00563rem;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+.box-container svg {
+  max-width: 4rem;
+  max-height: 4rem;
+  align-self: flex-end;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  opacity: 0.7;
 }
