@@ -130,6 +130,7 @@ main {
 }
 
 .product-description {
+  max-width: 33.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,10 +163,12 @@ main {
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
   gap: 1.56rem;
 }
 
-.box-container {
+.card-container {
   max-width: 22rem;
   max-height: 15.6rem;
   background-color: #fff;
@@ -174,6 +177,22 @@ main {
   padding: 9%;
   display: flex;
   flex-direction: column;
+}
+
+.card-container.supervisor {
+  border-top: 0.3rem solid var(--cyan);
+}
+
+.card-container.team-builder {
+  border-top: 0.3rem solid var(--red);
+}
+
+.card-container.karma {
+  border-top: 0.3rem solid var(--orange);
+}
+
+.card-container.calculator {
+  border-top: 0.3rem solid var(--blue);
 }
 
 .middle-container {
@@ -197,7 +216,7 @@ main {
   margin-bottom: 2rem;
 }
 
-.box-container svg {
+.card-container img {
   max-width: 4rem;
   max-height: 4rem;
   align-self: flex-end;
@@ -211,4 +230,19 @@ footer {
   padding: 1.5rem 0;
   font-size: 1rem;
   opacity: 0.7;
+}
+
+@media (min-width: 64rem) {
+  .sp-text {
+    font-size: 2.25rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.88rem;
+  }
+
+  .middle-container {
+    gap: 1.88rem;
+  }
 }
