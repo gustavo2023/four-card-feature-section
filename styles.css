@@ -97,13 +97,6 @@ textarea:not([rows]) {
 
 /* Start of custom styles */
 
-/* Set up a basic grid */
-/* .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-} */
-
 :root {
   --red: #ea5353;
   --cyan: #45d3d3;
